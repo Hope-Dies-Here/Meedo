@@ -1,0 +1,126 @@
+.carousel-control {
+    width: 2%;
+    scale: 0.5;
+    display: none;
+}
+.page-title-cont {
+    background-color:;
+    height: 25rem;
+    border-bottom: none;
+}
+.page-title {
+    flex-direction: column !important;
+    height: 11rem;
+}
+.tit-detail h4 {
+    font-size: 1.5rem !important;
+}
+.tit-detail p {
+    font-size: 0.75rem !important;
+}
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem !important;
+    background-color:;
+    width: 100%;
+}
+.get-album {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    boorder: 1px solid red;
+}
+.get-album img{
+  width: 3.5rem;
+  background-color: orange;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.buy-tickets p {
+    margin: 0;
+    padding: 0;
+}
+#button {
+    background-color:;
+    width: 50%;
+}
+nav {
+    padding-block: 0.5rem;
+}
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.brand p {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    word-spacing: -0.25rem;
+    letter-spacing: -0.05rem;
+}
+.brand p .records {
+    font-weight: 300;
+}
+.brand-img {
+    width: 2em;
+    border-radius: 50%;
+}
+.movie-bar {
+    top: rem;
+}
+
+.carousel {
+    width: 100%;
+    height: 14rem;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: grid;
+    place-content: center;
+    width: 100% !important;
+    margin-top: 4rem;
+    height: 14rem;
+    border: 5px solidred;
+}
+.carousel-inner {
+    background-color: black;
+    opacity: 0.75;
+    boorder: 8px solid yellow;
+    width: 100% !important;
+    height: 30rem;
+}
+.item {
+    boorder: red 5px solid;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-bottom: 0em;
+}
+.carousel .item img {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 90%;
+    /* Align slide image horizontally center */
+}
+
+.bs-example {
+    mmargin: 20px;
+    margin-top: 30% !important;
+    transform: translateY(20rem);
+}
+.item {
+    background-color:;
+}
+
+.checkem {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}

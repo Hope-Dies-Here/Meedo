@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=720" /> -->
+    <!-- <meta name="viewport" content="width=1506, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="./library/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="" content="" />
+    <title>Artists</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="brand">
+          <img class="brand-img" src="img/brand.jpg" alt="" />
+          <h2 class="brand-txt">
+            Meedo<span class="records-txt"> Records </span>
+          </h2>
+        </div>
+        <!-- <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div> -->
+        <div class="links">
+          <a href="#">Discover</a>
+          <a href="#">Albums & Singles</a>
+          <a href="./artists.html">Artists</a>
+          <a href="#">News & Updates</a>
+          <a href="#">About Us</a>
+        </div>
+        <div id="mobile-links">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <div id="the-mob-liks">
+            <a href="#">Discover</a>
+            <a href="./index.html">Albums & Singles</a>
+            <a href="./artists.html">Artists</a>
+
+            <a href="#">News & Updates</a>
+            <a href="#">About Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="side-bar" id="side-bar">
+        <div class="sort parts">
+          <div><input type="checkbox" checked="true" /> SORT BY</div>
+          <div><input type="radio" /> Popular</div>
+          <div><input type="radio" /> New Release</div>
+          <div><input type="radio" /> Recently Added</div>
+          <div><input type="radio" /> IMDb Rating</div>
+          <div><input type="radio" /> Meta Score</div>
+        </div>
+        <br />
+        <div class="sort parts">
+          <div><input type="checkbox" checked="true" /> SOURCE</div>
+          <div><input type="checkbox" /> Free</div>
+          <div><input type="checkbox" /> Rent or Buy</div>
+          <div><input type="checkbox" /> Subscription</div>
+        </div>
+        <div class="src-bottom parts">
+          <div><input type="checkbox" /> Yidio</div>
+          <div><input type="checkbox" /> Apple Tv</div>
+          <div><input type="checkbox" /> BET+</div>
+          <div><input type="checkbox" /> Starz</div>
+          <div><input type="checkbox" /> Paramount+</div>
+          <div><input type="checkbox" /> HOB Max</div>
+          <div><input type="checkbox" />Optimus Prime</div>
+          <div><input type="checkbox" /> Hulu</div>
+        </div>
+      </div>
+      <div class="movie-bar" id="artists-bar">
+        <div class="the-artists-cont">
+          <div class="the-artists-op">
+            <div class="artist-title-cont">
+              <h2 class="artist-title">
+                <img class="title-icon" src="./icons/users.svg" alt="" />
+                <span> Artists </span>
+              </h2>
+              <!-- <h3 class="top-tit">Artists</h3> -->
+              <!-- <img class="top-more" src="./icons/arrow-right.svg" /> -->
+            </div>
+            <div class="search-cont">
+              <div class="">
+                <input
+                  type="text"
+                  name="search-artist"
+                  id="search-artist"
+                  class="sub-input"
+                />
+                <!-- <img class="search-icon" src="./icons/search.svg" alt="" /> -->
+              </div>
+            </div>
+            <div class="biography-text" id="artists-txt">
+              <p>
+                Meedo Has signed 8 artists sp far. We are looking forward bal. All artists have an album amd singles. you'll find details down.
+              </p>
+            </div>
+            <div class="new-home">
+              <a href="./artist.html" class="art-page-single artists-home">
+                <img class="album-art" src="./img/kassmasse.jpg" alt="" />
+                <p class="home-artist-name">Kassmasse</p>
+                <p class="home-artist-status">3 Albums | 1 Single</p>
+              </a>
+              <div class="art-page-single artists-home">
+                <img class="album-art" src="./img/jd.jpg" alt="" />
+                <p class="home-artist-name">Jemberu</p>
+                <p class="home-artist-status">1 Album | 1 Single</p>
+              </div>
+              <div class="art-page-single artists-home">
+                <img class="album-art" src="./img/wegdayit.jpg" alt="" />
+                <p class="home-artist-name">Wegdayt</p>
+                <p class="home-artist-status">1 Album</p>
+              </div>
+              <div class="art-page-single artists-home">
+                <img class="album-art" src="./img/laeke.jpg" alt="" />
+                <p class="home-artist-name">Laeke</p>
+              </div>
+              <div class="art-page-single artists-home">
+                <img class="album-art" src="./img/dagi.jpg" alt="" />
+                <p class="home-artist-name">Dagmawit</p>
+              </div>
+              <div class="art-page-single artists-home">
+                <img class="album-art" src="./img/uno.jpg" alt="" />
+                <p class="home-artist-name">UNO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="subs-cont">
+        <h3 class="contact-us-text">Contact Ass</h3>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          value=""
+          placeholder="Enter Your Email..."
+        />
+        <button class="button" type="submit">SUBSCRIBE</button>
+      </div>
+      <div class="top-footer">
+        <div class="foot-two">
+          <h3 class="foot-title">Social Media</h3>
+          <ul class="">
+            <li class="">Youtube</li>
+            <li class="">Tiktok</li>
+            <li class="">Instagram</li>
+            <li class="">Facebook</li>
+          </ul>
+        </div>
+        <div class="foot-one">
+          <h3 class="foot-title">Contact Ass</h3>
+          <ul>
+            <li>Hope alue ert lppp onside the</li>
+          </ul>
+        </div>
+        <div class="foot-two">
+          <h3 class="foot-title">Social Media</h3>
+          <ul class="">
+            <li class="">Youtube</li>
+            <li class="">Tiktok</li>
+            <li class="">Instagram</li>
+            <li class="">Facebook</li>
+          </ul>
+        </div>
+        <div class="foot-two">
+          <h3 class="foot-title">Social Media</h3>
+          <ul class="">
+            <li class="">Youtube</li>
+            <li class="">Tiktok</li>
+            <li class="">Instagram</li>
+            <li class="">Facebook</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright Reserved 2024, Meedo Records</p>
+      </div>
+      <!-- <a href="#main" class="previous">&laquo; Previous</a>
+            <a href="#footer" class="next">Next &raquo;</a> -->
+    </footer>
+  </body>
+</html>

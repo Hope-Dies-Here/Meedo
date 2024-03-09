@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Example of Bootstrap 3 Modals Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="temp.css" type="text/css" media="all" />
+ 
+  </head>
+
+  <body>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            data-target="#navbarCollapse"
+            data-toggle="collapse"
+            class="navbar-toggle"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand brand">
+            <img class="brand-img" src="img/brand.jpg" alt="" />
+
+            <p>Meedo <span class="records">Records </span></p>
+          </a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li class="">
+              <a href="#">News & Updates</a>
+            </li>
+            <li class="">
+              <a href="./artists.html">Artists</a>
+            </li>
+            <li class="">
+              <a href="#">Albums & Singles</a>
+            </li>
+            <li class="">
+              <a href="./artist.html">About Us</a>
+            </li>
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+    <div class="bs-example">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div
+              class="page-title"
+              data-toggle="modal"
+              data-target="#myModal"
+              class="btn btn-lg btn-primary"
+            >
+              <p class="new-tag">New</p>
+              <div class="tit-detail">
+                <h4 class="card-title">ሣንቃ ሡቅ Concert</h4>
+                <p>
+                  Jemberu released a new album on june 21. It contains 13 tracks
+                  including Tiru Muzika and Endalehu Alehu. Laeke one of our
+                  best producer produced the album
+                </p>
+              </div>
+              <img
+                class="car-img"
+                src="./img/Announcement/concert-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="page-title"
+              data-toggle="modal"
+              data-target="#myModal"
+              class="btn btn-lg btn-primary"
+            >
+              <p class="new-tag">New</p>
+              <div class="tit-detail">
+                <h4 class="card-title">ሣንቃ ሡቅ Concert</h4>
+                <p>
+                  Jemberu released a new album on june 21. It contains 13 tracks
+                  including Tiru Muzika and Endalehu Alehu. Laeke one of our
+                  best producer produced the album
+                </p>
+              </div>
+              <img
+                class="car-img"
+                src="./img/Albums/jd.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="page-title"
+              data-toggle="modal"
+              data-target="#myModal"
+              class="btn btn-lg btn-primary"
+            >
+              <p class="new-tag">New</p>
+              <div class="tit-detail">
+                <h4 class="card-title">ሣንቃ ሡቅ Concert</h4>
+                <p>
+                  Jemberu released a new album on june 21. It contains 13 tracks
+                  including Tiru Muzika and Endalehu Alehu. Laeke one of our
+                  best producer produced the album
+                </p>
+              </div>
+              <img
+                class="car-img"
+                src="./img/Announcement/concert-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="movie-bar">
+      <!-- <h3 class="upper">Announcements</h3> -->
+     
+        <div class="the-artists">
+              <div class="top-side">
+                <h3 class="top-tit">Artists</h3>
+                <a class="" href="/artists.html">
+                  <img class="top-more" src="./icons/arrow-right.svg" />
+                </a>
+              </div>
+              <div class="new-home">
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/kassmasse.jpg" alt="" />
+                  <p class="home-artist-name">Kassmasse</p>
+                  <p class="home-artist-status">3 Albums | 1 Single</p>
+                </div>
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/jd.jpg" alt="" />
+                  <p class="home-artist-name">Jemberu</p>
+                  <p class="home-artist-status">1 Album | 1 Single</p>
+                </div>
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/wegdayit.jpg" alt="" />
+                  <p class="home-artist-name">Wegdayt</p>
+                  <p class="home-artist-status">1 Album</p>
+                </div>
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/laeke.jpg" alt="" />
+                  <p class="home-artist-name">Laeke</p>
+                </div>
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/dagi.jpg" alt="" />
+                  <p class="home-artist-name">Dagmawit</p>
+                </div>
+                <div class="art-page-single artists-home">
+                  <img class="album-art" src="./img/uno.jpg" alt="" />
+                  <p class="home-artist-name">UNO</p>
+                </div>
+              </div>
+            </div>
+            <div class="the-albums">
+              <div class="top-side">
+                <h3 class="top-tit">Albums</h3>
+                <img class="top-more" src="./icons/arrow-right.svg" />
+              </div>
+              <div class="new-home">
+                <div class="art-page-single">
+                  <img
+                    class="album-art"
+                    src="./img/Albums/sanqa suq.jpg"
+                    alt=""
+                  />
+                  <p class="art-page-album-title">Sanqa Souq EP</p>
+                  <p class="art-page-artist-name">Kassmasse</p>
+                </div>
+                <div class="art-page-single">
+                  <img
+                    class="album-art"
+                    src="./img/Albums/asalafi.jpg"
+                    alt=""
+                  />
+                  <p class="art-page-album-title">Asalafi</p>
+                  <p class="art-page-artist-name">Wegdayt</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Albums/maleda.jpg" alt="" />
+                  <p class="art-page-album-title">Maleda EP</p>
+                  <p class="art-page-artist-name">Kassmasse</p>
+                </div>
+                <div class="art-page-single">
+                  <img
+                    class="album-art"
+                    src="./img/Albums/bahl weg.jpg"
+                    alt=""
+                  />
+                  <p class="art-page-album-title">Bahil | Weg</p>
+                  <p class="art-page-artist-name">Kasssmasse</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Albums/laeke.jpg" alt="" />
+                  <p class="art-page-album-title">Dejen</p>
+                  <p class="art-page-artist-name">Laeke</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Albums/jd.jpg" alt="" />
+                  <p class="art-page-album-title">Jemberu Demeke</p>
+                  <p class="art-page-artist-name">Jemberu Demeke</p>
+                </div>
+              </div>
+            </div>
+            <div class="the-singles">
+              <div class="top-side">
+                <h3 class="top-tit">Singles & Video Clips</h3>
+                <img class="top-more" src="./icons/arrow-right.svg" />
+              </div>
+              <div class="new-home">
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Singles/tef.jpg" alt="" />
+                  <p class="art-page-album-title">Tef Tef</p>
+                  <p class="art-page-artist-name">UNO ft. Jemberu</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Singles/1888.jpg" alt="" />
+                  <p class="art-page-album-title">1888</p>
+                  <p class="art-page-artist-name">Kassmasse</p>
+                </div>
+                <div class="art-page-single">
+                  <img
+                    class="album-art"
+                    src="./img/Singles/ayferam.jpg"
+                    alt=""
+                  />
+                  <p class="art-page-album-title">Ayferam Game</p>
+                  <p class="art-page-artist-name">Jemberu Demeke</p>
+                </div>
+                <div class="art-page-single">
+                  <img
+                    class="album-art"
+                    src="./img/Albums/bahl weg.jpg"
+                    alt=""
+                  />
+                  <p class="art-page-album-title">ባህል | ወግ</p>
+                  <p class="art-page-artist-name">ካሥማሠ</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Albums/laeke.jpg" alt="" />
+                  <p class="art-page-album-title">ደጀን</p>
+                  <p class="art-page-artist-name">ላዕከ</p>
+                </div>
+                <div class="art-page-single">
+                  <img class="album-art" src="./img/Albums/jd.jpg" alt="" />
+                  <p class="art-page-album-title">ጀምበሩ ደመቀ</p>
+                  <p class="art-page-artist-name">ጀምበሩ ደመቀ</p>
+                </div>
+              </div>
+            </div>
+    </div>
+    <!-- Button HTML (to Trigger Modal) -->
+    <button class="btn btn-danger btn-lg lg" data-toggle="modal" data-target="#myModal">Toggle Modal</button>
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="card-title">Sanqa Souq EP</h4>
+          </div>
+          <div class="modal-body">
+            <div class="paget">
+              <img
+                class="car-img"
+                src="./img/Albums/sanqa suq.jpg"
+                alt=""
+              />
+              <p>
+                Sanqa Souq Concert on Milinium Adarash December 21. Only 5$
+                megbia tickets and VIP 10$.
+              </p>
+            <ul>
+              <li>Album Name: Sanqa Souq</li>
+              <li>Album Artist: Kassmasse</li>
+              <li>Featuring: Kassmasse </li>
+              <li>Producer: UNO </li>
+              <li>Total Tracks: 3</li>
+              <li>Released Date: August, 25/2023</li>
+            </ul>
+              <a class="Read More Here..." href="#">Read More Here...</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="get-album">
+              <img src="./icons/youtube.svg">
+              <img src="./icons/music.svg">
+              <img src="./icons/map-pin.svg">
+              <img src="./icons/gift.svg">
+            </div>
+            <div id="button">
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-dismiss="modal"
+              >
+                Close It
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-example">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseOne"
+                >1. What is HTML?</a
+              >
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <p>
+                HTML stands for HyperText Markup Language. HTML is the main
+                markup language for describing the structure of Web pages.
+                <a
+                  href="http://www.tutorialrepublic.com/html-tutorial/"
+                  target="_blank"
+                  >Learn more.</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <strong>Note:</strong> Click on the linked heading text to expand or
+        collapse accordion panels.
+      </p>
+    </div>
+<div class="checkem">
+  
+</div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+        $(".show-text").click(function () {
+          $("#myModal").find(".lots-of-text").toggle();
+          $("#myModal").modal("handleUpdate");
+        });
+        $("#myCollapsible").on("hidden.bs.collapse", function () {
+          alert("Collapsible element has been completely closed.");
+        });
+      });
+    </script>
+  </body>
+</html>

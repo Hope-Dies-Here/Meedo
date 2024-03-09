@@ -1,0 +1,173 @@
+
+.overview{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.album-photo-cont{
+  width: 40%;
+  background-color: ;
+  background-image: ;
+}
+.the-album-img{
+  width: 50%;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px rgba(0,0,0,.25);
+}
+
+.album-detail-overview{
+  width: 60%;
+}
+.overview-title{
+  padding: 1rem 0 0 1rem;
+  font-weight: 700;
+  color: #333;
+  /* position: absolute;
+  top: 1rem;
+  left: 1rem; */
+}
+.desc-text{
+  padding: 1rem;
+}
+
+.overview-ul {
+  display: flex;
+  grid-template-columns: ;
+}
+
+.overview-ul li{
+  border-bottom: 1px dashed #333;
+  padding: .75rem 0 .25rem 0;
+}
+
+.overview-ul{
+  
+}
+
+.album-details-bottom{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: ;
+  gap: 0 .5rem;
+}
+
+.album-bottom-title{
+  margin-block: 1rem .5rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.album-details-bottom .overview-title{
+  padding-left: 0;
+  margin-left: 0;
+}
+.tracks-ol{
+  display: grid;
+  grid-template-columns: 100%;
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+.tracks-ol li{
+  width: 90%;
+}
+
+.get-album-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.get-album-title{
+  text-align: ;
+  text-transform: ;
+}
+
+.card{
+  padding-top: .5rem;
+  transition: .5s;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, .25);
+}
+
+.card img{
+  width: 3rem;
+  margin-inline: auto;
+}
+
+.youtube-cont:hover{
+  border: 1px solid red;
+  color: red;
+}
+.spotify-cont:hover{
+  border: 1px solid green;
+  color: green;
+}
+.purple-cont:hover{
+  border: 1px solid purple;
+  color: purple;
+  
+}
+.card h5{
+  font-weight: 600;
+}
+@media(max-width: 800px){
+  .overview{
+    display: grid;
+  }
+  .album-photo-cont{
+    width: 100%;
+    height: 20rem;
+    display: grid;
+    place-content: center;
+  }
+  .the-album-img{
+    
+  }
+  .album-detail-overview{
+    width: 100%;
+  }
+  .album-details-bottom{
+    grid-template-columns: 1fr;
+  }
+  .desc-text{
+    padding: 0;
+  }
+  .tracks-ol{
+    max-height: fit-content;
+    overflow: hidden;
+  }
+  .get-album-links{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media(mi-width: 1100px){
+  #first-list{
+    transform: translateX(-2rem);
+  }
+  #second-list{
+    transform: translateX(-1rem);
+  }
+  #third-list{
+    transform: translateX(0rem);
+  }
+  #fourth-list{
+    transform: translateX(0rem);
+  }
+  #fifth-list{
+    transform: translateX(-1rem);
+  }
+  #sixth-list{
+    transform: translateX(-2rem);
+  }
+
+
+}

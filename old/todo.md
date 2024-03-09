@@ -1,0 +1,1 @@
+1. View more thing about album inside modal

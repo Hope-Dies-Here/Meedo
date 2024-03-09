@@ -1,0 +1,337 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("./fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+:root {
+	--black: #1f2126;
+	--yello: #fcbc58;
+	--white: #fff;
+	--light: #f6f8e2;
+	--gray: #e0ddca;
+	--red: #f57c51;
+}
+
+body {
+	font-family: "Quicksand" !important;
+	background-color: var(--white) !important;
+}
+
+nav {
+	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.2);
+	padding-block: 1rem !important;
+	z-index: 99999 !important;
+	width: 100%;
+}
+
+.this {
+	display:;
+	justify-content:;
+}
+
+.header .brand-txt {
+	color: var(--black);
+	text-transform: uppercase;
+	margin: 0 0.25rem;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+.records-txt {
+	font-weight: 300;
+}
+.header .brand {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.header .brand-img {
+	border-radius: 50%;
+	width: 2rem;
+}
+.about,
+.artists,
+.albums-singles,
+.news {
+	padding: 3rem 1rem;
+}
+.div-title {
+	font-size: 2rem;
+	color: var(--black);
+}
+/* hero section */
+
+.grid > .hero {
+	padding: 0 !important;
+	height: 100svh;
+	background-image: linear-gradient(50deg, #000, var(--black), var(--yello));
+	position: relative;
+}
+.big-hero-text {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 0.91;
+	background-image: linear-gradient(90deg, green, yellow, red);
+	width: %;
+	background-clip: text;
+	color: transparent;
+}
+.hero-text {
+	position: absolute;
+	bottom: 15%;
+	left: 5%;
+	color: var(--white);
+}
+.hero-image-cont {
+	width: 100%;
+}
+.about {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	justify-content: center;
+	gap: 5rem;
+	max-width: 80%;
+	margin-inline: auto;
+}
+.about-title {
+}
+.about p {
+	color: var(--black);
+	font-weight: 500;
+	line-height: 1.75rem !important;
+}
+.read-more {
+	padding: 0.5rem 1.5rem;
+	border: 2px solid var(--black);
+	boorder-radius: 100vh;
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	background-color: transparent;
+	color: var(--black);
+	margin-block: 1rem !important;
+}
+.about-us-images {
+	justify-self: center;
+	max-width: 25rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 0.75rem;
+	align-items: center;
+	opacity: 0.75;
+	scale: 0.8;
+	animation: fade linear forwards;
+	animation-timeline: view();
+	animation-range: 200px 400px;
+}
+.about-us-images img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.kas {
+	grid-column: span 2;
+}
+.meedo {
+	grid-row: span 2;
+	grid: strech;
+}
+@keyframes fade {
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+.albums-singles {
+	background-color: var(--light);
+	background-color: #ffd107;
+	background-image: linear-gradient(#fff7d0, #ffd107);
+}
+.albums {
+	margin-inline: auto;
+	display: grid;
+	place-content: center;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	color: var(--black);
+	padding: 1rem;
+	max-width: 25rem;
+	justify-items: center;
+}
+.titles {
+	width: 90%;
+	text-align: center;
+}
+.albums-singles-title {
+	margin-bottom: 0.5rem;
+}
+.album {
+	text-align: center;
+	width: 13rem;
+	border-radius: 1rem;
+	text-decoration: none;
+	/* border: 1px solid var(--white); */
+	color: inherit;
+}
+.album img {
+	border-radius: 1rem;
+	width: 100%;
+}
+
+.see-more {
+	align-self: center;
+	box-shadow: 0px 0px 8px #00000049;
+	margin-inline: auto;
+	border-radius: 100vh;
+	background-color: transparent;
+}
+/* Artists */
+.artists {
+	text-align: center;
+	display: grid;
+	align-content: center;
+	gap: 2rem;
+	max-width: 30rem;
+	margin-block: 1rem 0;
+	margin-inline: auto;
+}
+.artist-title,
+.artist-title > h1 {
+	color: #4c0000 !important;
+	font-weight: 600;
+}
+.artists-list {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	gap: 1rem;
+	align-items: center;
+	margin-top: 2rem;
+	margin-inline: -2rem;
+	overflow-x: clip;
+}
+
+.artists-list img {
+	width: 100%;
+	heeight: 12rem;
+	border-radius: 0.2rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid var(--white);
+	box-shadow:
+		0px 10px 15px rgba(0, 0, 0, 0.25),
+		0px 25px 15px rgba(189, 67, 90, 0.25);
+}
+.artists-list .artist-name {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-block: 1rem 0;
+}
+
+.album p {
+	font-size: 1em;
+	font-weight: 900;
+	color: var(--black);
+	margin-block: 0.5rem;
+	text-transform: uppercase;
+}
+
+.news-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 1em;
+}
+.more-news {
+	border: 1px solid blue;
+	padding: 0.5rem 1rem;
+	border-radius: 100vh;
+	text-decoration: none;
+}
+.news-grid {
+	max-width: 50rem;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	gap: 2rem;
+}
+.news-item {
+}
+.news-item img {
+	height: 18rem;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	margin-block: 1rem;
+}
+.news-item h4 {
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.news .read-more {
+	margin-top: 0 !important;
+}
+@media (min-width: 720px) {
+	.this {
+		display: flex;
+		justify-content: end;
+	}
+	.about {
+	}
+	.about-title {
+		grid-column: span 2;
+	}
+	.titles {
+		grid-column: span 2;
+	}
+	.see-more {
+		grid-column: span 2;
+	}
+	.news {
+		width: 80%;
+		margin-inline: auto;
+		justify-items: center;
+	}
+	.news-item:last-child{
+,	}
+}
+
+@media (max-width: 720px) {
+	.about {
+		grid-template-columns: 1fr;
+		max-width: 100%;
+		gap: 2rem;
+	}
+	.about-us-images {
+		padding: 5rem 1rem;
+	}
+	.albums {
+		grid-template-columns: 1fr;
+	}
+
+	.artists-title {
+		width: 90%;
+		margin-inline: auto;
+	}
+	.artists-list {
+		/* display: flex;
+  width: 12rem;
+  justify-content: start;
+  padding-top: 5rem;
+  gap: 1rem; */
+		/* width: calc(100% + 2rem);
+  padding: 1rem; */
+	}
+	.news-grid {
+		grid-template-columns: 1fr;
+	}
+	.news-item{
+	  border-bottom: 1px solid gray;
+	}
+}
