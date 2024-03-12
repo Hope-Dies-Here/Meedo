@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+.body{
+  margin: 0;
+}
+.skew-image{
+  width: 45em;
+  bacakground-image: linear-gradient(45deg, #111, #180600);
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  margin: 2em auto;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.27);
+}
+.text{
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  line-height: 1.5;
+}
+.text h2{
+  font-size: 1.5em;
+  margin: 0;
+  width: 75%;
+  line-height: 1.25;
+}
+.text p{
+  font-size: .9rem;
+}
+.image{
+  width: 50%;
+  height: 17em;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+img{
+  
+  box-shadow: inset 1px 2px 5px rgba(0,0,0, .81);
+}
+.image:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6.1em;
+  transform: translateY(-50%) rotate(200deg);
+  background-color: #fff;
+  width: 40%;
+  height: 140%;
+  box-shadow: -3px -5px 25px rgba(0,0,0, .5);
+}
+.skew-left .image:before{
+  left: initial;
+  right: -6.1em;
+  transform: translateY(-50%) rotate(-200deg);
+  
+}
+img{
+  width: 140%;
+}
+
+@media (max-width: 720px){
+  .skew-image{
+    display: block;
+    width: 23em;
+    border-radius: .32rem;
+  }
+  .image{
+    border-radius: 0 0 .32rem .32rem;
+    
+  }
+  .skew-left .image{
+    border-radius: .32rem .32rem 0 0;
+  }
+  .image, .text{
+    width: 100%;
+  }
+  img{
+    width: 160%;
+  }
+  .image:before{
+    width: 120%;
+    height: 41%;
+    top: -5em;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+  }
+  .skew-left .image:before{
+    top: initial;
+    bottom: -5em;
+    transform: translateX(-15%) rotate(-10deg);
+    
+  }
+}
+
+.t{
+  height: 15rem;
+  width: 15rem;
+  background-color: #00000082;
+  background-image: url('./img/jd.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+  font-weight: bold;
+  border-radius: .3rem;
+  display: grid;
+  place-content: center;
+  transition: .6s;
+  text-align: center;
+}
+.t h2{
+  background-color: white;
+  color: black;
+  padding-inline: 2rem;
+  line-height: 1;
+  transition: .4s;
+  opacity: 0;
+}
+@keyframes bg-size-change{
+  0%{
+    background-size: cover;
+  }
+  50%{
+    background-size: 20rem;
+  }
+  100%{
+    background-size: cover;
+  }
+  
+}
+.t:hover > h2{
+  opacity: 1;
+}
