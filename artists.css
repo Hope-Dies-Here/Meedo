@@ -103,7 +103,7 @@
 	background-color: #2c2c2c;
 	background-color: var(--darkblue);
 	position: relative;
-	overflow-x: clip;
+	overflow: clip;
 }
 .inside-artists-hero{
   transform: translateY(20%);
@@ -520,5 +520,11 @@
     width: 10rem!important;
     height: 10rem!important;
     
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px){
+  .artists-hero{
+    height: fit-content;
   }
 }

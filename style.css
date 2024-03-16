@@ -6,6 +6,18 @@
 	font-family: "Avoro";
 	src: url("./fonts/Arvo/Arvo-Bold.ttf");
 }
+@font-face {
+	font-family: "Copyduck";
+	src: url("./fonts/Copyduck.ttf");
+}
+@font-face {
+	font-family: "Whocats";
+	src: url("./fonts/Whocats.ttf");
+}
+@font-face {
+	font-family: "Super Cosmic";
+	src: url("./fonts/Super Cosmic Personal Use.ttf");
+}
 :root {
 	--black: #1f2126;
 	--yello: #fcbc58;
@@ -194,8 +206,9 @@ nav {
 	background-color: white;
 }
 .div-title {
-	font-size: 1.68rem;
-	font-family: "Avoro";
+	font-size: 1.618rem;
+	font-weight: bold!important;
+	font-family: "Quicksand";
 	color: var(--blue);
 }
 /* hero section */
@@ -248,7 +261,9 @@ nav {
   display: grid;
   width: ;
   font-family: "Avoro";
-	font-size: 3em;
+  font-family: "Super Bloom";
+  font-family: "Whocats";
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 0.85;
@@ -257,7 +272,9 @@ nav {
 	background-clip: text;
 	color: transparent;
 	color: var(--lightyello);
-	text-shadow: 1px 1px 1px white, 1px 2px 3px red;
+	text-shadow: 2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black;
+	text-shadow: 2px 2px white, -2px -2px white, 2px -2px white, -2px 2px white;
+	text-shadow: 1px 1px 10px black, 2px 2px white;
 	transition: 1s;
 }
 @keyframes sunrise{
@@ -295,22 +312,22 @@ nav {
   animation: 2s show ease, 5s glow ease infinite 2s, 6s rotate linear infinite .2s;
 }
 .big-hero-text > span:nth-child(1){
-  font-size: 1rem;
-  animation: 2s slide-left ease!important;
+  font-size: 1em;
+  animation: 1s slide-left ease!important;
 }
 .big-hero-text > span:nth-child(2){
-  font-size: 1.68rem;
-  animation: 2s slide-right ease!important;
+  font-size: 1.618em;
+  animation: 1s slide-right ease!important;
 }
 .big-hero-text > span:nth-child(3){
-  font-size: 2.78rem;
-  animation: 2s slide-left ease!important;
-  animation-delay: 2s;
+  font-size: 2.618em;
+  animation: 1s slide-left ease!important;
+  animation-delay: 1s;
 }
 .big-hero-text > span:nth-child(4){
-  font-size: 4.78rem;
-  animation: 2s slide-right ease-out!important;
-  animation-delay: 2s;
+  font-size: 4.236em;
+  animation: 1s slide-right ease!important;
+  animation-delay: 1s;
 }
 @keyframes glow{
   50% {
@@ -382,9 +399,9 @@ nav {
 .about-title {
 }
 .about p {
-	color: var(--black);
-	font-weight: 500;
-	line-height: 1.75rem !important;
+	color: var(--darkblue);
+	line-height: 1.5rem !important;
+	font-size: .9rem;
 }
 .read-more {
 	padding: 0.5rem 1.5rem;
@@ -494,6 +511,7 @@ nav {
 }
 /* Artists */
 .artists {
+  border-top: 1rem solid white;
 	text-align: center;
 	display: grid;
 	align-content: center;
@@ -503,28 +521,43 @@ nav {
 	margin-inline: auto;
 	background-color: transparent;
 }
-.artist-title,
-.artist-title > h1 {
+.artist-title{
 	color: var(--darkblue) !important;
-	color: #2c2c2c !important;
-	font-weight: 600;
-	
+}
+.artist-title > h1 {
+	font-weight: bold;
+}
+.artist-title > p{
+  width: 95%;
 }
 .artists-list {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	gap: 1rem;
 	align-items: center;
 	margin-top: 2rem;
-	margin-inline: -2rem;
-	overflow-x: clip;
+	msargin-inline: -2rem;
+	overflow-x: ;
+	position: relative!important;
+}
+.artists-list:nth-child(odd) {
+  height: 8rem!important;
+}
+.artists-list:nth-child(1){
+}
+.artists-list:nth-child(3){
+}
+.middle-artist{
+	height: 10rem;
+	background-color: ;
+  
 }
 
 .artists-list img {
+  margin-inline: auto;
 	width: 100%;
-	heeight: 12rem;
 	border-radius: 0.2rem;
-	border-radius: 50%;
+	boorder-radius: 50%;
 	object-fit: cover;
 	border: 2px solid var(--white);
 	box-shadow:
@@ -538,7 +571,22 @@ nav {
 
 	margin-block: 1rem 0;
 }
-
+.goto-artists{
+  margin-bottom: ;
+  margin-bottom: -10%;
+}
+.see-more-light-btn{
+  border-color: var(--blue);
+  color: var(--blue);
+  transition: .4s;
+}
+.see-more-light-btn:hover{
+  background-color: var(--blue);
+  color: var(--lightyello);
+}
+.stroke{
+  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
 .album p {
 	font-size: 1em;
 	font-weight: 900;
@@ -547,6 +595,25 @@ nav {
 	text-transform: uppercase;
 }
 
+.news{
+  background-color: #fff7d0;
+  background-color: var(--lightyello);
+  background-image: linear-gradient(
+  var(--lightyello), 
+  #fff7d0, 
+  #fff
+  );
+  background-image: linear-gradient(
+  0deg, 
+  #fff7d0,
+  #fff7d0
+  );
+  max-width: 85%;
+  margin: 3rem;
+  padding-inline: 3rem;
+  border-radius: .5rem;
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.168);
+}
 .news-title {
 	display: flex;
 	justify-content: space-between;
@@ -571,11 +638,13 @@ nav {
 .news-item {
 }
 .news-item img {
-	height: 25rem;
+	height: 50%;
 	width: 100%;
 	object-fit: cover;
-	border-radius: 0.5rem;
+	border-radius: .3rem;
 	margin-block: 1.5rem;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+	border: 2px solid #fff7d0;
 }
 .news-item h4 {
 	font-weight: 700;
@@ -774,11 +843,17 @@ nav {
 		/* width: calc(100% + 2rem);
   padding: 1rem; */
 	}
+	
+	.news{
+	   max-width: 100%;
+    margin-inline: 0rem;
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+    box-shadow: none;
+	}
 	.news-grid {
 		grid-template-columns: 1fr;
-	}
-	.news-item{
-
 	}
 	.foot-links{
 	  grid-template-columns: 1fr 1fr;
