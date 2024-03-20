@@ -84,7 +84,7 @@
 
 
 
-.artists-hero{
+.artists-hero, .albums-hero{
   /* background-blend-mode: multiply; */
   color: var(--lightyello);
   position: relative;
@@ -110,7 +110,7 @@
   height: fit-content;
 }
 .artists-hero-text{
-  font-size: 2rem!important;
+  font-size: 1.618rem!important;
   font-family: Avoro;
   text-transform: uppercase;
   text-align: center;

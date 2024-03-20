@@ -1,0 +1,42 @@
+body{
+  width: 100%;
+}
+.artist-hero-section{
+  heeight: 30rem;
+  background-color: black;
+}
+.albums-section{
+  display: grid;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+}
+.section-title{
+  font-weight: bold;
+}
+.albums-grid{
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+#album{
+  max-width: 10rem;
+  height: 12rem;
+  display: grid;
+  grid-template-rows: 10rem 2rem;
+}
+#album > img{
+  height: 100%;
+  object-fit: cover;
+}
+.album-title{
+  
+}
+
+@media(max-width: 750px){
+  .albums-grid{
+    /* grid-template-columns: 1fr 1fr; */
+  }
+}

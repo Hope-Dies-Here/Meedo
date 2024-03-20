@@ -3,5 +3,4 @@ const $ = (element) => {
 }
 
 $("#see-more-link").addEventListener("click", (e) => {
-  e.preventDefault()
 })
